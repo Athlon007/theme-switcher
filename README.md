@@ -15,16 +15,6 @@ Open the themeswitcher.sh in a text editor and configure the following:
 - `HOUR_LIGHT=XX` (from when does the light theme apply)
 - `HOUR_DARK=XX` (from when does the dark theme apply)
 
-Then open `.bashrc` in your text editor add the following:
-
-``
-`/path/to/theme/switcher/themeswitcher.sh`
-``
-
-`at XX:XX -f /path/to/theme/switcher/themeswitcher.sh`
-
-Where XX:XX is replaced with the hour when the system should switch to dark theme (you can also add third line that sets the theme back in the morning).
-
 ## Requirements
 
 - **at** from package manager
