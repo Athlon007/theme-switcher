@@ -17,12 +17,13 @@ Open the themeswitcher.sh in a text editor and configure the following:
 
 Then open `~/.profile` file and add following:
 
-``theme-switcher
-
+```bash
+/path/to/theme/switcher/themeswitcher.sh
 atqoutput=`atq`
 if [ -z "$atqoutput" ]; then
   at XX:XX -f /path/to/theme/switcher/themeswitcher.sh 2> /dev/null
-fi``
+fi
+```
 
 Where `XX:XX` is the time script is executed.
 
