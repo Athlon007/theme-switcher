@@ -15,6 +15,17 @@ Open the themeswitcher.sh in a text editor and configure the following:
 - `HOUR_LIGHT=XX` (from when does the light theme apply)
 - `HOUR_DARK=XX` (from when does the dark theme apply)
 
+Then open `~/.profile` file and add following:
+
+``theme-switcher
+
+atqoutput=`atq`
+if [ -z "$atqoutput" ]; then
+  at XX:XX -f /path/to/theme/switcher/themeswitcher.sh 2> /dev/null
+fi``
+
+Where `XX:XX` is the time script is executed.
+
 ## Requirements
 
 - **at** from package manager
